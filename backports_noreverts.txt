@@ -230,7 +230,6 @@ d26c65f4ae7 Merge r199895 - REGRESSION (r189567): The top of Facebook's messenge
 b9461cf5e03 Merge r199875 - NetworkCacheIOChannelSoup: detach the newly-created IOChannel::readSync thread https://bugs.webkit.org/show_bug.cgi?id=156907
 26c2dc9855e Merge r199856 - RenderVideo should always update the intrinsic size before layout. https://bugs.webkit.org/show_bug.cgi?id=156878
 a0ae68c8117 Merge r199851 - Fix crashes when loading SVG images.
-4c06bdc6e07 Revert "Merge r197520 - DFG should be able to compile StringReplace"
 a5ea57b8e83 Unreviewed. Update OptionsGTK.cmake and NEWS for 2.12.2 release.
 05c1ce0dc73 Merge r200173 - [GTK] Overlay scrollbars with steppers enabled render incorrectly https://bugs.webkit.org/show_bug.cgi?id=156988
 175e9b44a0e Merge r200125 - [GTK] Fails to build randomly when generating LLIntDesiredOffsets.h https://bugs.webkit.org/show_bug.cgi?id=155427
@@ -401,13 +400,6 @@ d4afd8a4e31 Merge r197615 - [GTK] Fix logging details after r197505 (Run the run
 e9370f7a989 Merge r196979 - [GTK] Allow to run the WebKitGTK+ MiniBrowser with the run-benchmark script. https://bugs.webkit.org/show_bug.cgi?id=153993
 e9e6ffbb2d1 Merge r198127 - Enable GSS-Negotiate support in libsoup https://bugs.webkit.org/show_bug.cgi?id=155354
 373f3023dbe Unreviewed. Update OptionsGTK.cmake and NEWS for 2.11.92 release.
-71b4ad1d241 Revert "Merge r197549 - DFG/FTL should inline accesses to RegExpObject::m_lastIndex"
-c8298c60054 Revert "Merge r197622 - The most aggressive form of RegExpTest/RegExpExec should speculate more aggressively than just cell"
-1f666fe6310 Revert "Merge r197641 - RegExpMatchesArray doesn't know how to have a bad time"
-910a1ef8e95 Revert "Merge r197715 - RegExp.prototype.exec() should call into Yarr at most once"
-7f82d49204b Revert "Merge r197730 - Reduce the number of instructions needed to record the last regexp result"
-362410c0feb Revert "Merge r197729 - createRegExpMatchesArray should allocate substrings more quickly"
-57dbd230f1d Revert "Merge r197796 - Regexp matching should incur less call overhead"
 7e20f976b4c Merge r198269 - REGRESSION(r195661): [GTK] very slow scrolling https://bugs.webkit.org/show_bug.cgi?id=155334
 41214ac699e Merge r198266 - Unreviewed, rolling out r196803. https://bugs.webkit.org/show_bug.cgi?id=155534
 45e311d267e Merge r198201 - REGRESSION (r197724): [GTK] Web Inspector: Images being blocked by CSP 2.0 https://bugs.webkit.org/show_bug.cgi?id=155432
@@ -419,17 +411,13 @@ f3c73a7b786 Merge r197998 - [GTK] Fix rendering of slider input elements https:/
 d907e70b6f4 Merge r197997 - [GTK] Scrollbars are broken once again with current GTK+ master https://bugs.webkit.org/show_bug.cgi?id=155292
 494df47b03d Merge r197811 - Font size computed style is innaccurate https://bugs.webkit.org/show_bug.cgi?id=154705 <rdar://problem/23474068>
 8614dfedd56 Merge r197802 - Web Inspector: Images being blocked by CSP 2.0 https://bugs.webkit.org/show_bug.cgi?id=155182 <rdar://problem/25040640>
-b4f35dbfe3d Merge r197796 - Regexp matching should incur less call overhead https://bugs.webkit.org/show_bug.cgi?id=155181
 331616c1fe9 Merge r197784 - Scrolling does not work when the mouse down is handled by a node https://bugs.webkit.org/show_bug.cgi?id=19033
 0bdf9587207 Merge r197774 - WeakBlock::visit() should check for a WeakHandleOwner before consulting mark bits. <https://webkit.org/b/155154>
-12d4bd917db Merge r197730 - Reduce the number of instructions needed to record the last regexp result https://bugs.webkit.org/show_bug.cgi?id=155161
-0762df41549 Merge r197729 - createRegExpMatchesArray should allocate substrings more quickly https://bugs.webkit.org/show_bug.cgi?id=155160
 fabff04c12e Merge r197725 - [JSC] Small clean up of how we use SSA's valuesAtHead https://bugs.webkit.org/show_bug.cgi?id=155152
 ec555d0e600 Merge r197724 - CSP: Source '*' should not match URLs with schemes blob, data, or filesystem https://bugs.webkit.org/show_bug.cgi?id=154122 <rdar://problem/24613336>
 0523a80e173 Merge r197706 - Cleanup: Add convenience function URL::procotolIsBlob() https://bugs.webkit.org/show_bug.cgi?id=155127 <rdar://problem/25016829>
 a4873f42ce3 Merge r197797 - Unreviewed, rolling in r197722. https://bugs.webkit.org/show_bug.cgi?id=155171
 1ac206fd8a8 Merge r197716 - Crash in WebCore::RenderElement::containingBlockForObjectInFlow https://bugs.webkit.org/show_bug.cgi?id=155109
-2078161a921 Merge r197715 - RegExp.prototype.exec() should call into Yarr at most once https://bugs.webkit.org/show_bug.cgi?id=155139
 cf7e12a55bd Merge r197697 - CSP: object-src directive should prohibit creation of nested browsing context https://bugs.webkit.org/show_bug.cgi?id=153153 <rdar://problem/24383209>
 6e7f1335ad4 Merge r197695 - [JSC] Improve and64() and or64() with immediate on x86 https://bugs.webkit.org/show_bug.cgi?id=155104
 92d91ee3695 Merge - 197688 - [JSC] Simplify the overflow check of ArithAbs https://bugs.webkit.org/show_bug.cgi?id=155063
@@ -446,20 +434,16 @@ e0a735677a2 Merge r197733 - REGRESSION(r197062): [GTK] Transparent backgrounds n
 76f265291a9 Merge r197653 - [JSC] Use 3 operands Add in more places https://bugs.webkit.org/show_bug.cgi?id=155082
 6226ab91dfb Merge r197652 - [JSC] Improve codegen of Compare and Test https://bugs.webkit.org/show_bug.cgi?id=155055
 19130dec1fe Merge r197649 - DFG should know how to speculate StringOrOther https://bugs.webkit.org/show_bug.cgi?id=155094
-944c8110c9d Merge r197641 - RegExpMatchesArray doesn't know how to have a bad time https://bugs.webkit.org/show_bug.cgi?id=155069
 e6812aea570 Merge r197640 - [JSC] RegExp#lastIndex should handle writable attribute when defining in defineOwnProperty path https://bugs.webkit.org/show_bug.cgi?id=155093
-6fbb742f48b Merge r197622 - The most aggressive form of RegExpTest/RegExpExec should speculate more aggressively than just cell https://bugs.webkit.org/show_bug.cgi?id=154900
 401d9bc55ee Merge r197609 - [GTK] Scrollbars are broken again with GTK+ >= 3.19.11 https://bugs.webkit.org/show_bug.cgi?id=154890
 78c95dea1d0 Merge r197577 - Remove use of deprecated sqlite3_expired https://bugs.webkit.org/show_bug.cgi?id=155025
 0b7934c1db0 Merge r197576 - Location.reload should not be writable https://bugs.webkit.org/show_bug.cgi?id=154989
 e18fb229e58 Merge r197570 - [iOS] Crash during font loading when injected bundle cancels load https://bugs.webkit.org/show_bug.cgi?id=155001
 1c47e39b19a Merge r197552 - Drop DocumentSharedObjectPool immediately when going into PageCache. <https://webkit.org/b/154986>
-d37e28183de Merge r197549 - DFG/FTL should inline accesses to RegExpObject::m_lastIndex https://bugs.webkit.org/show_bug.cgi?id=155003
 86f03977f14 Merge r197547 - Unreviewed, remove test with flaky timeout that doesn't test anything anymore. This test was relevant back when arguments got torn off; something that we don't do anymore. It uses a loop that waits for the top-tier compiler to compile it. We don't write tests like that anymore.
 38d763d904b Merge r197546 - [JSC] Add support for MADD, MSUB and MNEG to Air https://bugs.webkit.org/show_bug.cgi?id=154997
 1608ce41b5b Merge r197545 - Unreviewed, rolling in r197174. https://bugs.webkit.org/show_bug.cgi?id=154762
 8a8cd5bf230 Merge r197542 - Octane/regexp's Exec function should benefit from array length accessor inlining https://bugs.webkit.org/show_bug.cgi?id=154994
-2c86cfa17fa Merge r197520 - DFG should be able to compile StringReplace https://bugs.webkit.org/show_bug.cgi?id=154979
 d0a0080e7ed Merge r197506 - [TextureMapper] Use RGBA format for textures attached to framebuffers https://bugs.webkit.org/show_bug.cgi?id=154965
 b3267a8e5b9 Merge r197492 - RegExpExec/RegExpTest should not unconditionally speculate cell https://bugs.webkit.org/show_bug.cgi?id=154901
 2d661e37a64 Merge r197491 - [JSC] JSCell_freeListNext and JSCell_structureID are considered not overlapping https://bugs.webkit.org/show_bug.cgi?id=154947
@@ -496,9 +480,6 @@ ea0e4d0da23 Merge r197357 - FTL should be able to run everything in Octane/regex
 83be9e39c78 Merge r197352 - Fixed compilation with !ENABLE(DATABASE_PROCESS). https://bugs.webkit.org/show_bug.cgi?id=154813
 a278dd3a5c8 Merge r197351 - [GTK] Touch slider test fails due to assertion in webkitWebViewBaseTouchEvent() https://bugs.webkit.org/show_bug.cgi?id=153829
 deafc000cba Unreviewed. Update OptionsGTK.cmake and NEWS for 2.11.91 release.
-82f0929fbb1 Revert "Merge r197226 - Remove the on demand executable allocator"
-8b1896cdef6 Revert "Merge r197303 - Shrink UnlinkedCodeBlock a bit."
-c9e48733349 Merge r197303 - Shrink UnlinkedCodeBlock a bit. <https://webkit.org/b/154797>
 30ca11d5e7d Merge r197300 - Variables can resolve to the wrong value when elements differ in nothing but inherited variable value https://bugs.webkit.org/show_bug.cgi?id=154785
 06069e994c4 Merge r197299 - FTL should lower its abstract heaps to B3 heap ranges https://bugs.webkit.org/show_bug.cgi?id=154782
 4a392e2d8df Merge r197298 - SVGToOTFFontConversion.cpp does not compile with libstdc++ 4.8 https://bugs.webkit.org/show_bug.cgi?id=154794
@@ -508,7 +489,6 @@ c9e48733349 Merge r197303 - Shrink UnlinkedCodeBlock a bit. <https://webkit.org/
 03edbdc6c81 Merge r197244 - Network cache: old pages returned by disk cache on history navigation after session is restored https://bugs.webkit.org/show_bug.cgi?id=153230
 8c66184693c Merge r197242 - REGRESSION (r196741): Web Inspector: Bottom section of Layers sidebar is 1px shorter than the console prompt https://bugs.webkit.org/show_bug.cgi?id=154773 <rdar://problem/24873345>
 694f3b980bf Merge r197236 - [GTK] Fix order of parameters in gtkdoc for webkit_web_view_get_snapshot
-dc2b74abcb0 Merge r197226 - Remove the on demand executable allocator https://bugs.webkit.org/show_bug.cgi?id=154749
 c307cd51b8d Merge r197210 - Reduce direct callers of Structure::findStructuresAndMapForMaterialization https://bugs.webkit.org/show_bug.cgi?id=154751
 61db31e67f9 Merge r197196 - Folding of OverridesHasInstance DFG nodes shoud happen in constant folding not fixup https://bugs.webkit.org/show_bug.cgi?id=154743
 d721a9d3b1f Merge r197194 - <g> wrapping <symbol> causes display of hidden <symbol> https://bugs.webkit.org/show_bug.cgi?id=154576
@@ -552,8 +532,6 @@ d74f39f1117 Merge r196967 - JSGlobalObject doesn't visit ProxyObjectStructure du
 7be583e588e Merge r196961 - REGRESSION (r196563): Images not loading on https://klim.co.nz/blog/paypal-sans-design-information/ https://bugs.webkit.org/show_bug.cgi?id=154547 <rdar://problem/24772167>
 a4fb4e7f863 Merge r196960 - Repeated background images have the wrong position when using bottom/right-relative background-position https://bugs.webkit.org/show_bug.cgi?id=154478
 d82c2473c30 Merge r196957 - [l10n] Updated Polish translation of WebKitGTK+ for 2.12 https://bugs.webkit.org/show_bug.cgi?id=154549
-c1bbb9ebc74 Revert "Merge r196948 - [JSC shell] Don't put empty arguments array to VM."
-a698dcfe83d Merge r196948 - [JSC shell] Don't put empty arguments array to VM. https://bugs.webkit.org/show_bug.cgi?id=154516
 2474156938f Merge r196936 - REGRESSION (r196620): Web Inspector: Filter bar in the left sidebar is 1px shorter than the console prompt https://bugs.webkit.org/show_bug.cgi?id=154529
 cff27a1d32c Merge r196896 - CodeBlock always visits its unlinked code twice https://bugs.webkit.org/show_bug.cgi?id=154494
 0f147f006ab Merge r196889 - iframe/frame/object.contentDocument should be on the prototype https://bugs.webkit.org/show_bug.cgi?id=154409
